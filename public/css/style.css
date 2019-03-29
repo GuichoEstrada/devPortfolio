@@ -38,7 +38,7 @@ ul{
 
 .scrolldown a {
    position: relative;
-   top: 22em;
+   top: 16em;
    left: 50%;
    color: #fff;
    display: block;
@@ -63,6 +63,10 @@ ul{
 }
 
 .scrolldown a:hover { color: #11ABB0; }
+
+#resume {
+  color: white;
+}
 
 /*NAV*/
 #nav-wrap {
@@ -115,7 +119,7 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color:  #FF8000; }
+ul#nav li.current a { color:  #00FF00; }
 
 /*HEADER*/
 .first-container {
@@ -131,10 +135,9 @@ ul#nav li.current a { color:  #FF8000; }
 
 .header {
   color: white;
-  position: absolute;
-  top: 50%;
-  right: -7%;
-  /* bring your own prefixes */
+  position: relative;
+  top: 350%;
+  right: -101%;
   transform: translate(-50%, -50%);
 }
 
@@ -161,7 +164,7 @@ ul#nav li.current a { color:  #FF8000; }
   margin-left: 20px;
 }
 
-h1, h2 {
+h1 {
    -webkit-text-stroke: 1px black;
    color: white;
    text-shadow:
@@ -171,11 +174,6 @@ h1, h2 {
       -1px 1px 0 #000,
        1px 1px 0 #000;
        font-size: 66px;
-}
-
-h2 {
-  padding-bottom: 20px;
-  border-bottom: 3px solid #179400;
 }
 
 .clip-text {
@@ -248,11 +246,11 @@ h2 {
   -webkit-text-stroke: 1px black;
    color: white;
    text-shadow:
-       3px 3px 0 #228B22,
-     -1px -1px 0 #228B22,  
-      1px -1px 0 #228B22,
-      -1px 1px 0 #228B22,
-       1px 1px 0 #228B22;
+       3px 3px 0 #000000,
+     -1px -1px 0 #000000,  
+      1px -1px 0 #000000,
+      -1px 1px 0 #000000,
+       1px 1px 0 #000000;
 }
 
 #about .container {
@@ -502,9 +500,37 @@ span[data-value]:after {
   position: relative;
 }
 
+#journal h2 span {
+  border-bottom: 3px solid #228B22;
+  padding-bottom: 6px;
+  margin-left: 20px;
+  margin-top: -5px;
+  -webkit-text-stroke: 1px black;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000000,
+     -1px -1px 0 #000000,  
+      1px -1px 0 #000000,
+      -1px 1px 0 #000000,
+       1px 1px 0 #000000;
+  font-size: 66px; 
+}
+
+#journal h2 {
+  margin-bottom: 40px;
+}
+
 #journal-blog {
   background: #fff;
   padding-bottom: 30px;
+}
+
+.project {
+  margin-top: 20px;
+}
+
+.scripts {
+  margin-bottom: 20px;
 }
 
 #journal .journal-block {
@@ -560,6 +586,7 @@ span[data-value]:after {
 #contact {
   background-color: black;
   padding-top: 60px;
+  padding-bottom: 60px;
   height: auto;
   width: 100%;
 }
@@ -576,6 +603,21 @@ span[data-value]:after {
 
 #contact input, #contact textarea {
   width: 100%;
+}
+
+#contact h2 {
+  border-bottom: 3px solid #228B22;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+  -webkit-text-stroke: 1px black;
+   color: white;
+   text-shadow:
+       3px 3px 0 #000000,
+     -1px -1px 0 #000000,  
+      1px -1px 0 #000000,
+      -1px 1px 0 #000000,
+       1px 1px 0 #000000;
+  font-size: 40px; 
 }
 
 #contact  #sendmessage {
@@ -615,7 +657,7 @@ span[data-value]:after {
 /*-----------------------------------------------------------------------------------*/
 
 #footer {
-  background: #f7f7f7;
+  background: #006400;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -638,7 +680,7 @@ span[data-value]:after {
 
 #footer .socials-media ul li a {
   font-size: 24px;
-  color: #999;
+  color: black;
   letter-spacing: 0.1em;
   font-weight: 500;
   background: transparent;
@@ -660,6 +702,7 @@ span[data-value]:after {
 }
 
 #footer p {
+  color: black;
   font-size: 12px;
   letter-spacing: 0.1em;
   font-weight: 500;

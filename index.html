@@ -28,45 +28,54 @@
 
     <!-- NAVBAR -->
     <div class="first-container" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav id="nav-wrap">
 
-      <nav id="nav-wrap">
+              <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+              <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-        <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-        <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+               <ul id="nav" class="nav">
+                <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+                <li><a class="smoothscroll" href="#about">About</a></li>
+                <li><a class="smoothscroll" href="#skills">Skills</a></li>
+                <li><a class="smoothscroll" href="#journal">Works</a></li>
+                <li><a class="smoothscroll" href="#contact">Contact</a></li>
+               </ul> <!-- end #nav -->
 
-         <ul id="nav" class="nav">
-          <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-          <li><a class="smoothscroll" href="#about">About</a></li>
-          <li><a class="smoothscroll" href="#skills">Skills</a></li>
-          <li><a class="smoothscroll" href="#journal">Works</a></li>
-          <li><a class="smoothscroll" href="#contact">Contact</a></li>
-         </ul> <!-- end #nav -->
-
-      </nav>
+            </nav>
+          </div>
+        </div>
+      </div>
       <!-- END OF NAVBAR -->
 
       <!-- HEADER -->
-      <div class="header">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="header">
 
-        <div class="introduction">
+            <div class="introduction">
 
-          <h1>I'm <span class="typed"></span></h1>
-          <p class="clip-text">Developer, Designer, Gamer</p>
+              <h1>I'm <span class="typed"></span></h1>
+              <p class="clip-text">Developer, Designer, Gamer</p>
 
+            </div>
+
+            <div class="social-media">
+
+              <ul>
+                <li><a href="https://www.facebook.com/lcrestrada" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/wissestrada" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/wiss.estrada/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/lcestrada/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/GuichoEstrada" target="_blank"><i class="fab fa-github"></i></a></li>
+              </ul>
+
+            </div>
+
+          </div>
         </div>
-
-        <div class="social-media">
-
-          <ul>
-            <li><a href="https://www.facebook.com/lcrestrada" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="https://twitter.com/wissestrada" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/wiss.estrada/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/lcestrada/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="https://github.com/GuichoEstrada" target="_blank"><i class="fab fa-github"></i></a></li>
-          </ul>
-
-        </div>
-
       </div>
       
       <p class="scrolldown">
@@ -110,7 +119,7 @@
 
             <div class="download">
               <p>
-                 <a href="./public/Resume.pdf" class="button" target="_blank"><i class="fa fa-download"></i>Download Resume</a>
+                 <a href="./public/Resume.pdf" class="button" id="resume" target="_blank"><i class="fa fa-download"></i>Download Resume</a>
               </p>
             </div>
 
@@ -158,14 +167,14 @@
 
     <div class="container">
       <div class="section-title text-center">
-        <h2>Projects</h2>
+        <h2><span>Projects</span></h2>
       </div>
     </div>
 
     <div class="container">
       <div class="journal-block">
         <div class="row">
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 project">
               <div class="journal-info">
                 <div class="card">
                   <div class="view overlay">
@@ -175,7 +184,7 @@
                     </a>
                   </div>
                   <div class="card-body elegant-color white-text rounded-bottom">
-                    <div class="container row text-center">
+                    <div class="container row text-center scripts">
                       <a class="activator waves-effect mr-4">
                         <i class="devicon-react-original-wordmark colored"></i>
                         <i class="devicon-nodejs-plain colored"></i>
@@ -191,7 +200,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 project">
               <div class="journal-info">
                 <div class="card">
                   <div class="view overlay">
@@ -201,7 +210,7 @@
                     </a>
                   </div>
                   <div class="card-body elegant-color white-text rounded-bottom">
-                    <div class="container row text-center">
+                    <div class="container row text-center scripts">
                       <a class="activator waves-effect mr-4">
                         <i class="devicon-laravel-plain-wordmark colored"></i>
                         <i class="devicon-php-plain colored"></i>
@@ -217,7 +226,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 project">
               <div class="journal-info">
                 <div class="card">
                   <div class="view overlay">
@@ -227,7 +236,7 @@
                     </a>
                   </div>
                   <div class="card-body elegant-color white-text rounded-bottom">
-                    <div class="container row text-center">
+                    <div class="container row text-center scripts">
                       <a class="activator waves-effect mr-4">
                         <i class="devicon-react-original-wordmark colored"></i>
                         <i class="devicon-nodejs-plain colored"></i>
@@ -243,7 +252,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 project">
               <div class="journal-info">
                 <div class="card">
                   <div class="view overlay">
@@ -253,7 +262,7 @@
                     </a>
                   </div>
                   <div class="card-body elegant-color white-text rounded-bottom">
-                    <div class="container row text-center">
+                    <div class="container row text-center scripts">
                       <a class="activator waves-effect mr-4">
                         <i class="devicon-html5-plain-wordmark colored"></i>
                         <i class="devicon-css3-plain-wordmark colored"></i>
@@ -283,14 +292,17 @@
           <div class="col-lg-6">
             <div class="contact-contact">
 
-              <h2 class="mb-30">GET IN TOUCH</h2>
+              <h2 class="mb-30">GET IN TOUCH <i class="fas fa-phone"></i></h2>
 
               <ul class="contact-details">
-                <li><span>Lot 30 Jasmine St</span></li>
-                <li><span>Violeta Village, Guiguinto, Bulacan</span></li>
-                <li><span>+63942-458-0052</span></li>
-                <li><span>+63915-344-8078</span></li>
-                <li><span>lcrestrada.dev@gmail.com</span></li>
+                <i class="fas fa-map-marker-alt"></i> 
+                  <li><span>Lot 30 Jasmine St</span></li>
+                  <li><span>Violeta Village, Guiguinto, Bulacan</span></li>
+                <i class="fas fa-mobile-alt"></i>
+                  <li><span>+63942-458-0052</span></li>
+                  <li><span>+63915-344-8078</span></li>
+                <i class="fas fa-envelope"></i>
+                  <li><span>lcrestrada.dev@gmail.com</span></li>
               </ul>
 
             </div>
@@ -332,7 +344,7 @@
                 </div>
 
                 <div class="col-lg-12">
-                  <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                  <input type="submit" class="btn btn-success btn-send" value="Send message">
                 </div>
 
               </div>
