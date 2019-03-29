@@ -102,14 +102,13 @@ ul#nav li {
 /* Links */
 ul#nav li a {
 
-/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
 
-   display: inline-block;
-   padding: 8px 13px;
-   line-height: 32px;
+  display: inline-block;
+  padding: 8px 13px;
+  line-height: 32px;
   text-decoration: none;
-   text-align: left;
-   color: #fff;
+  text-align: left;
+  color: #fff;
 
   -webkit-transition: color .2s ease-in-out;
   -moz-transition: color .2s ease-in-out;
@@ -512,7 +511,7 @@ span[data-value]:after {
 }
 
 /*PORTFOLIO*/
-#journal,  #journal-blog {
+#project,  #project-blog {
   height: auto;
   width: 100%;
   background: #000000;
@@ -520,7 +519,7 @@ span[data-value]:after {
   position: relative;
 }
 
-#journal h2 span {
+#project h2 span {
   border-bottom: 3px solid #228B22;
   padding-bottom: 6px;
   margin-left: 20px;
@@ -536,11 +535,11 @@ span[data-value]:after {
   font-size: 66px; 
 }
 
-#journal h2 {
+#project h2 {
   margin-bottom: 40px;
 }
 
-#journal-blog {
+#project-blog {
   background: #fff;
   padding-bottom: 30px;
 }
@@ -554,26 +553,26 @@ span[data-value]:after {
   justify-content: center;
 }
 
-#journal .journal-block {
+#project .project-block {
   display: inline-block;
   height: auto;
   width: 100%;
 }
 
-#journal .journal-block .journal-info {
+#project .project-block .project-info {
   position: relative;
 }
 
-.journal-block .journal-info img {
+.project-block .project-info img {
   max-width: 100%;
 }
 
-.journal-block .journal-info .journal-txt {
+.project-block .project-info .project-txt {
   padding: 25px 0px;
   position: relative;
 }
 
-.journal-block .journal-info .journal-txt h4 a {
+.project-block .project-info .project-txt h4 a {
   display: block;
   font-size: 19px;
   line-height: 24px;
@@ -587,7 +586,7 @@ span[data-value]:after {
   transition: all 0.5s ease-in-out 0s;
 }
 
-.journal-block .journal-info .journal-txt h4 a:hover {
+.project-block .project-info .project-txt h4 a:hover {
   color: #b8a07e;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
@@ -596,7 +595,7 @@ span[data-value]:after {
   transition: all 0.5s ease-in-out 0s;
 }
 
-.journal-block .journal-info .journal-txt p {
+.project-block .project-info .project-txt p {
   margin: 0;
   font-size: 14px;
   line-height: 24px;
