@@ -133,10 +133,13 @@ ul#nav li.current a { color:  #00FF00; }
   height: 100%;
 }
 
+.intro-container {
+  margin-top: 40em;
+}
+
 .header {
   color: white;
   position: relative;
-  top: 350%;
   right: -101%;
   transform: translate(-50%, -50%);
 }
@@ -228,7 +231,7 @@ h1 {
   width: 100%;
   height: auto;
   background: url(https://i.pinimg.com/originals/ea/3f/d3/ea3fd3102ccf575e3c33954f73eab78d.jpg) no-repeat center center;
-  padding-top: 190px;
+  padding-top: 50px;
   padding-bottom: 190px;
 }
 
@@ -297,6 +300,10 @@ h1 {
 
 .about-descr {
   color: white;
+}
+
+.descr-container {
+  margin-top: 2em;
 }
 
 /*SKILLS*/
