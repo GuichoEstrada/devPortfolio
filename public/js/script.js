@@ -11,17 +11,6 @@ $(document).ready(function() {
         });
 });
 
-// Typed JS
-var typed = $(".typed");
-
-  $(function() {
-    typed.typed({
-      strings: ["Carlo Estrada.", "a developer.", "a designer.", "a gamer."],
-      typeSpeed: 100,
-      loop: true,
-    });
-  });
-
 // Skills Progress Bar
 var lang = {
   "html": "100%",

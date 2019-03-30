@@ -11,6 +11,10 @@
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+    <!-- Font Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="./public/img/favicon.png" >
     <!-- Devicon -->
@@ -18,265 +22,259 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" type="text/css" href="public/css/style.css">
-    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 
-    <title>Carlo Estrada - Web Developer</title>
+    <title>Carlo Estrada - Full-Stack Web Developer</title>
   </head>
   <body>
 
-    <!-- NAVBAR -->
-    <div class="first-container" id="home">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <nav id="nav-wrap">
+  <!-- NAVBAR -->
+  <nav id="nav-wrap" class="navbar-1">
 
-              <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-              <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+    class="fas fa-bars fa-1x"></i></span></button>
 
-               <ul id="nav" class="nav">
-                <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-                <li><a class="smoothscroll" href="#about">About</a></li>
-                <li><a class="smoothscroll" href="#skills">Skills</a></li>
-                <li><a class="smoothscroll" href="#projects">Projects</a></li>
-                <li><a class="smoothscroll" href="#contact">Contact</a></li>
-               </ul> <!-- end #nav -->
-
-            </nav>
-          </div>
-        </div>
-      </div>
-      <!-- END OF NAVBAR -->
-
-      <!-- HEADER -->
-        <div class="col-md-12 intro-container">
-          <div class="header">
-
-            <div class="introduction">
-
-              <h1>I'm <span class="typed"></span></h1>
-              <p class="clip-text">Developer, Designer, Gamer</p>
-
-            </div>
-
-            <div class="social-media">
-
-              <ul>
-                <li><a href="https://www.facebook.com/lcrestrada" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://twitter.com/wissestrada" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/wiss.estrada/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/lcestrada/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="https://github.com/GuichoEstrada" target="_blank"><i class="fab fa-github"></i></a></li>
-              </ul>
-
-            </div>
-
-          </div>
-        </div>
-      
-      <p class="scrolldown">
-
-         <a class="smoothscroll" href="#about"><i class="far fa-arrow-alt-circle-down"></i></a>
-
-      </p>
-
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+      <ul id="nav" class="navbar-nav mr-auto">
+        <li class="nav-item"><a href="#header" class="smoothscroll nav-link">Home <i class="fas fa-home"></i></a></li>
+        <li class="nav-item"><a href="#about" class="smoothscroll nav-link">About <i class="fas fa-user-tie"></i></a></li>
+        <li class="nav-item"><a href="#project" class="smoothscroll nav-link">Projects <i class="fas fa-scroll"></i></a></li>
+        <li class="nav-item"><a href="#contact" class="smoothscroll nav-link">Contact <i class="fas fa-mobile-alt"></i></a></li>
+      </ul> <!-- end #nav -->
     </div>
-    <!-- END OF HEADER -->
-    
-    <!-- ABOUT ME -->
-    <section id="about">
 
-      <div class="header-col">
+  </nav>
+  <!-- END OF NAVBAR -->
 
-        <h1><span>About Me</span></h1>
-
-      </div>
-
+  <!-- HEADER -->
+  <div id="header" class="home">
+    <div class="row">
       <div class="container">
+        <div class="header-content">
+          <h1><strong>I'm <span id="typed"></span></strong></h1>
+          <p class="clip-text"><strong>Developer, Designer, Gamer</strong></p>
 
-        <div class="row justify-content-between">
-
-          <div class="col-lg-4 ">
-            <div class="div-img-bg">
-              <div class="about-img">
-                <img src="public/img/about-me.jpg" class="img-responsive" alt="me">
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-7 descr-container">
-            <div class="about-descr">
-
-              <p class="p-heading">I'm a Manila-based full-stack web developer who loves clean, simple & unique design. i also enjoy crafting brand identities, icons, & ilustration work. </p>
-              <p class="separator">As a personal hobby, I picked up gaming (video games in particular) at the early age of 5. I enjoy learning how a game is played, and become good at it afterwards because they push my limits and make me feel inspired but I also make sure I spend time socializing.</p>
-              <p class="separator">Quality time with those I love has always been a priority. I am also good at drawing which is a skill I picked up from my dad. In the event that I don’t feel like playing, I go out and travel, if I have the time and resources.</p>
-
-            </div>
-
-            <div class="download">
-              <p>
-                 <a href="./public/Resume.pdf" class="button" id="resume" target="_blank"><i class="fa fa-download"></i>Download Resume</a>
-              </p>
-            </div>
-
-          </div>
+          <ul class="social-media list-social">
+            <li><a href="https://www.facebook.com/lcrestrada" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/wissestrada" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/wiss.estrada/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/lcestrada/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/GuichoEstrada" target="_blank"><i class="fab fa-github"></i></a></li>
+          </ul>
         </div>
-      </div>
-    </section>  
-    <!-- END OF ABOUT -->
-
-    <!-- SKILLS -->
-    <section id="skills">
-
-      <div class="row skill">
-
-        <div class="col-8 main-col">
-
-          <div class="skills-col">
-
-            <h1><span>Skills</span></h1>
-
-          </div>
-
-          <div class="bars">
-
-             <ul class="skills">
-                <li><span class="bar-expand html5" data-value="80"><em>HTML5</em></span></li>
-                <li><span class="bar-expand css" data-value="80"><em>CSS3</em></span></li>
-                <li><span class="bar-expand js" data-value="60"><em>JavaScript</em></span></li>
-                <li><span class="bar-expand react" data-value="55"><em>React JS</em></span></li>
-                <li><span class="bar-expand PHP" data-value="55"><em>PHP</em></span></li>
-                <li><span class="bar-expand laravel" data-value="70"><em>Laravel</em></span></li>
-                <li><span class="bar-expand photoshop" data-value="55"><em>Photoshop</em></span></li>
-            </ul>
-
-          </div><!-- end skill-bars -->
-
-        </div>
-
-      </div> <!-- End skills -->
-
-    </section>
-
-    <!-- PORTFOLIO -->
-    <div id="project" class="text-left paddsection">
-
-    <div class="container">
-      <div class="section-title text-center">
-        <h2><span>Projects</span></h2>
       </div>
     </div>
 
-    <div class="container">
-      <div class="project-block">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 project">
-              <div class="project-info">
-                <div class="card">
-                  <div class="view overlay">
-                    <img class="card-img-top" src="./public/img/project3.png" alt="Card image cap">
-                    <a>
-                      <div class="mask rgba-white-slight"></div>
+    <p class="scrolldown">
+      <a class="smoothscroll" href="#about"><i class="far fa-arrow-alt-circle-down"></i></a>
+    </p>
+  </div>
+  <!-- END OF HEADER -->
+
+  <!-- ABOUT ME -->
+  <section id="about">
+    <div class="row">
+
+      <div class="container col-3 about-me">
+        <div class="about-col">
+          <h1><span>About Me</span></h1>
+        </div>
+        <div class="part">
+            <div class="octo">
+              <div class="img-container">
+                <img src="public/img/about-me.jpg" class="img-responsive" alt="me" width="500" 
+                height="316" />
+              </div>
+            </div>
+        </div>
+
+        <div class="about-descr">
+
+          <p class="p-heading">I'm a Manila-based full-stack web developer who loves clean, simple & unique design. i also enjoy crafting brand identities, icons, & ilustration work. </p>
+          <p class="separator">As a personal hobby, I picked up gaming (video games in particular) at the early age of 5. I enjoy learning how a game is played, and become good at it afterwards because they push my limits and make me feel inspired but I also make sure I spend time socializing.</p>
+          <p class="separator">Quality time with those I love has always been a priority. I am also good at drawing which is a skill I picked up from my dad. In the event that I don’t feel like playing, I go out and travel, if I have the time and resources.</p>
+
+          <div class="download">
+            <p>
+               <a href="./public/Resume.pdf" class="button" id="resume" target="_blank"><i class="fa fa-download"></i>Download Resume</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container col-md-6 skills-bar"> 
+        <div class="bars">
+
+           <ul class="skills">
+              <li><span class="bar-expand html5" data-value="80"><em>HTML5</em></span></li>
+              <li><span class="bar-expand css" data-value="80"><em>CSS3</em></span></li>
+              <li><span class="bar-expand js" data-value="60"><em>JavaScript</em></span></li>
+              <li><span class="bar-expand react" data-value="55"><em>React JS</em></span></li>
+              <li><span class="bar-expand PHP" data-value="55"><em>PHP</em></span></li>
+              <li><span class="bar-expand laravel" data-value="70"><em>Laravel</em></span></li>
+              <li><span class="bar-expand photoshop" data-value="55"><em>Photoshop</em></span></li>
+              <li><span class="bar-expand photoshop" data-value="55"><em>Illustrator</em></span></li>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </section>  
+  <!-- END OF ABOUT -->
+
+  <div class="parallax">
+    <div class="container text-container">
+      <div id="carouselExampleSlidesOnly" data-interval=7000 class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <blockquote>
+             <p>"Every great developer you know got there by solving problems they were unqualified to solve until they actually did it."</p>
+             <cite>Patrick McKenzie</cite>
+            </blockquote>
+          </div>
+          <div class="carousel-item">
+            <blockquote>
+             <p>"Your work is going to fill a large part of your life, and the only way to be truly satisfied is
+             to do what you believe is great work. And the only way to do great work is to love what you do.
+             If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it."
+             </p>
+             <cite>Steve Jobs</cite>
+            </blockquote>
+          </div>
+          <div class="carousel-item">
+            <blockquote>
+             <p>"Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.""
+             </p>
+             <cite>Thomas Edison</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div clas>
+
+  <!-- PROJECTS -->
+  <div id="project" class="text-left paddsection">
+
+  <div class="container">
+    <div class="section-title text-center">
+      <h2><span>Projects</span></h2>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="project-block">
+      <div class="row">
+
+          <div class="col-lg-6 col-md-6 project">
+            <div class="project-info">
+              <div class="card">
+                <div class="view overlay">
+                  <img class="card-img-top" src="./public/img/project3.png" alt="Card image cap">
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <div class="card-body elegant-color white-text rounded-bottom">
+                  <div class="container row text-center scripts">
+                    <a class="activator waves-effect mr-4">
+                      <i class="devicon-react-original-wordmark colored"></i>
+                      <i class="devicon-nodejs-plain colored"></i>
+                      <i class="devicon-mongodb-plain-wordmark colored"></i>
+                      <i class="devicon-heroku-plain-wordmark colored"></i>
                     </a>
                   </div>
-                  <div class="card-body elegant-color white-text rounded-bottom">
-                    <div class="container row text-center scripts">
-                      <a class="activator waves-effect mr-4">
-                        <i class="devicon-react-original-wordmark colored"></i>
-                        <i class="devicon-nodejs-plain colored"></i>
-                        <i class="devicon-express-original-wordmark colored"></i>
-                        <i class="devicon-mongodb-plain-wordmark colored"></i>
-                        <i class="devicon-heroku-plain-wordmark colored"></i>
-                      </a>
-                    </div>
-                    <h4 class="card-title">Project devMeet</h4>
-                    <hr class="hr-light">
-                    <p class="card-text white-text mb-4">A MERN stack based social network for developers</p>
-                    <a href="http://project-devmeet.herokuapp.com/" class="white-text d-flex justify-content-end"><h5>See the project<i class="fas fa-angle-double-right"></i></h5></a>
-                  </div>
+                  <h4 class="card-title">Project devMeet</h4>
+                  <hr class="hr-light">
+                  <p class="card-text white-text mb-4">A MERN stack based social network for developers</p>
+                  <a href="http://project-devmeet.herokuapp.com/" class="white-text d-flex justify-content-end project-link"><h5>See the project<i class="fas fa-angle-double-right"></i></h5></a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 project">
-              <div class="project-info">
-                <div class="card">
-                  <div class="view overlay">
-                    <img class="card-img-top" src="./public/img/project2.png" alt="Card image cap">
-                    <a>
-                      <div class="mask rgba-white-slight"></div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 project">
+            <div class="project-info">
+              <div class="card">
+                <div class="view overlay">
+                  <img class="card-img-top" src="./public/img/project2.png" alt="Card image cap">
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <div class="card-body elegant-color white-text rounded-bottom">
+                  <div class="container row text-center scripts">
+                    <a class="activator waves-effect mr-4">
+                      <i class="devicon-laravel-plain-wordmark colored"></i>
+                      <i class="devicon-php-plain colored"></i>
+                      <i class="devicon-mysql-plain-wordmark colored"></i>
+                      <i class="devicon-nodejs-plain colored"></i>
+                      <i class="devicon-heroku-plain-wordmark colored"></i>
                     </a>
                   </div>
-                  <div class="card-body elegant-color white-text rounded-bottom">
-                    <div class="container row text-center scripts">
-                      <a class="activator waves-effect mr-4">
-                        <i class="devicon-laravel-plain-wordmark colored"></i>
-                        <i class="devicon-php-plain colored"></i>
-                        <i class="devicon-mysql-plain-wordmark colored"></i>
-                        <i class="devicon-nodejs-plain colored"></i>
-                        <i class="devicon-express-original-wordmark colored"></i>
-                        <i class="devicon-heroku-plain-wordmark colored"></i>
-                      </a>
-                    </div>
-                    <h4 class="card-title">Project Laravel Bookstore</h4>
-                    <hr class="hr-light">
-                    <p class="card-text white-text mb-4">An asset management website called Turn The Page Bookstore</p>
-                    <a href="http://project-laravelbookstore.herokuapp.com/" class="white-text d-flex justify-content-end"><h5>See the project <i class="fas fa-angle-double-right"></i></h5></a>
-                  </div>
+                  <h4 class="card-title">Project Laravel Bookstore</h4>
+                  <hr class="hr-light">
+                  <p class="card-text white-text mb-4">Book borrowing app called Turn The Page Bookstore</p>
+                  <a href="http://project-laravelbookstore.herokuapp.com/" class="white-text d-flex justify-content-end project-link"><h5>See the project <i class="fas fa-angle-double-right"></i></h5></a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 project">
-              <div class="project-info">
-                <div class="card">
-                  <div class="view overlay">
-                    <img class="card-img-top" src="./public/img/project1.png" alt="Card image cap">
-                    <a>
-                      <div class="mask rgba-white-slight"></div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 project">
+            <div class="project-info">
+              <div class="card">
+                <div class="view overlay">
+                  <img class="card-img-top" src="./public/img/project1.png" alt="Card image cap">
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <div class="card-body elegant-color white-text rounded-bottom">
+                  <div class="container row text-center scripts">
+                    <a class="activator waves-effect mr-4">
+                      <i class="devicon-react-original-wordmark colored"></i>
+                      <i class="devicon-nodejs-plain colored"></i>
+                      <i class="devicon-postgresql-plain-wordmark colored"></i>
+                      <i class="devicon-heroku-plain-wordmark colored"></i>
                     </a>
                   </div>
-                  <div class="card-body elegant-color white-text rounded-bottom">
-                    <div class="container row text-center scripts">
-                      <a class="activator waves-effect mr-4">
-                        <i class="devicon-react-original-wordmark colored"></i>
-                        <i class="devicon-nodejs-plain colored"></i>
-                        <i class="devicon-express-original-wordmark colored"></i>
-                        <i class="devicon-postgresql-plain-wordmark colored"></i>
-                        <i class="devicon-heroku-plain-wordmark colored"></i>
-                      </a>
-                    </div>
-                    <h4 class="card-title">Project Smart Brain</h4>
-                    <hr class="hr-light">
-                    <p class="card-text white-text mb-4">A face detection web application using Clarifai API</p>
-                    <a href="http://project-smartbrain.herokuapp.com/" class="white-text d-flex justify-content-end"><h5>See the project <i class="fas fa-angle-double-right"></i></h5></a>
-                  </div>
+                  <h4 class="card-title">Project Smart Brain</h4>
+                  <hr class="hr-light">
+                  <p class="card-text white-text mb-4">A face recognition web application made with React</p>
+                  <a href="http://project-smartbrain.herokuapp.com/" class="white-text d-flex justify-content-end project-link"><h5>See the project <i class="fas fa-angle-double-right"></i></h5></a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 project">
-              <div class="project-info">
-                <div class="card">
-                  <div class="view overlay">
-                    <img class="card-img-top" src="./public/img/project4.png" alt="Card image cap">
-                    <a>
-                      <div class="mask rgba-white-slight"></div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 project">
+            <div class="project-info">
+              <div class="card">
+                <div class="view overlay">
+                  <img class="card-img-top" src="./public/img/project4.png" alt="Card image cap">
+                  <a>
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <div class="card-body elegant-color white-text rounded-bottom">
+                  <div class="container row text-center scripts">
+                    <a class="activator waves-effect mr-4">
+                      <i class="devicon-html5-plain-wordmark colored"></i>
+                      <i class="devicon-css3-plain-wordmark colored"></i>
+                      <i class="devicon-bootstrap-plain-wordmark colored"></i>
+                      <i class="devicon-gitlab-plain-wordmark colored"></i>
                     </a>
                   </div>
-                  <div class="card-body elegant-color white-text rounded-bottom">
-                    <div class="container row text-center scripts">
-                      <a class="activator waves-effect mr-4">
-                        <i class="devicon-html5-plain-wordmark colored"></i>
-                        <i class="devicon-css3-plain-wordmark colored"></i>
-                        <i class="devicon-bootstrap-plain-wordmark colored"></i>
-                        <i class="devicon-gitlab-plain-wordmark colored"></i>
-                      </a>
-                    </div>
-                    <h4 class="card-title">Project For The Win</h4>
-                    <hr class="hr-light">
-                    <p class="card-text white-text mb-4">A Simple Static Website about fictional digital distribution platform</p>
-                    <a href="https://guicho.gitlab.io/capstone-1/" class="white-text d-flex justify-content-end"><h5>See the project<i class="fas fa-angle-double-right"></i></h5></a>
-                  </div>
+                  <h4 class="card-title">Project For The Win</h4>
+                  <hr class="hr-light">
+                  <p class="card-text white-text mb-4">A Simple Static Website</p>
+                  <a href="https://guicho.gitlab.io/capstone-1/" class="white-text d-flex justify-content-end project-link"><h5>See the project<i class="fas fa-angle-double-right"></i></h5></a>
                 </div>
               </div>
             </div>
@@ -287,7 +285,7 @@
   </div>
 
   <!-- CONTACT -->
-    <div id="contact" class="paddsection">
+  <div id="contact" class="paddsection">
     <div class="container">
       <div class="contact-block1">
         <div class="row">
@@ -312,7 +310,7 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="" method="post" role="form" class="contactForm">
+            <form action="phpMail/index.php" method="POST" role="form" id="contactForm">
               <div class="row">
 
                 <div id="sendmessage">Your message has been sent. Thank you!</div>
@@ -320,34 +318,38 @@
 
                 <div class="col-lg-6">
                   <div class="form-group contact-block1">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
+                    <label for="form_name">Name *</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Full Name" data-rule="minlen:4" required="required" data-error="Name is required." />
+                    <div class="help-block with-errors"></div>
                   </div>
                 </div>
 
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
+                    <label for="form_email">Email *</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" required="required" data-error="Please enter a valid email" />
+                    <div class="help-block with-errors"></div>
                   </div>
                 </div>
 
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
+                    <label for="form_subject">Subject *</label>
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-error="Please enter a subject" />
+                    <div class="help-block with-errors"></div>
                   </div>
                 </div>
 
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                    <div class="validation"></div>
+                    <label for="form_message">Message *</label>
+                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-error="Please write something for me" required="required"  placeholder="Message"></textarea>
+                    <div class="help-block with-errors"></div>
                   </div>
                 </div>
 
                 <div class="col-lg-12">
-                  <input type="submit" class="btn btn-success btn-send" value="Send message">
+                  <input type="submit" name="submit" class="btn btn-success btn-send" value="Send message">
                 </div>
 
               </div>
@@ -361,6 +363,9 @@
   <!-- Footer -->
   <div id="footer" class="text-center">
     <div class="container">
+      <p class="back-to-top scrollup">
+        <a class="smoothscroll" href="#header"><i class="far fa-arrow-alt-circle-up"></i></a>
+      </p>
       <div class="socials-media text-center">
 
         <ul class="list-unstyled">
@@ -378,13 +383,35 @@
   </div>
   <!-- End of Footer -->
 
-    <!-- Optional JavaScript -->
-    <script type="text/javascript" src="public/js/script.js"></script>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Optional JavaScript -->
+    <script>
+      var typed = new Typed('#typed', {
+        strings: ["Carlo Estrada. ^1000", "a developer. ^1000", "a designer. ^1000", "a gamer. ^1000"],
+        loop: true,
+        typeSpeed: 70
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        // Transition effect for navbar 
+        $(window).scroll(function() {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if($(this).scrollTop() > 500) { 
+              $('.navbar').addClass('solid');
+          } else {
+              $('.navbar').removeClass('solid');
+          }
+        });
+      });
+    </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then Flexslider -->
+    <script type="text/javascript" src="public/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" 
     crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   </body>
 </html>
