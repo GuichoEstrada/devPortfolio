@@ -424,20 +424,20 @@ h1 {
    padding-top: 6px;
 }
 #about .main-col { padding-right: 5%; }
-#about .download .button {
+#about .download .resume-button {
    margin-top: 6px;
    background: #179400;
 }
-#about .download .button:hover {
+#about .download .resume-button:hover {
    background: #fff;
    color: #179400;
 }
-#about .download .button i {
+#about .download .resume-button i {
    margin-right: 15px;
    font-size: 20px;
 }
 
-.button {
+.resume-button {
   padding: 12px 20px;
   border-radius: 3px;
 }
@@ -476,6 +476,7 @@ h1 {
   height: 42px;
   border-radius: 3px;
 }
+
 .bars li em {
   font: 15px 'opensans-bold', sans-serif;
   color: #fff;
@@ -841,9 +842,9 @@ span[data-value]:after {
   display: block;
 }
 
-/*-----------------------------------------------------------------------------------*/
-/*  Footer
-/*-----------------------------------------------------------------------------------*/
+
+/*  Footer  */
+
 
 #footer {
   background: #006400;
@@ -904,67 +905,467 @@ span[data-value]:after {
 }
 
 /*MEDIA QUERIES*/
+/*Small devices*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 640px)
+  and (-webkit-min-device-pixel-ratio: 2) { 
+/*HEADER*/
 
-@media (max-width: 575.98px) { 
-.header-content {
-  position: absolute;
+  .header-content {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+  }
 
-}
+  .header-content h1 {
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 10px;
+  }
 
-.header-content h1 {
-  color: white;
-  font-size: 16px;
-  font-weight: 100;
-  margin-bottom: 10px;
-  -webkit-text-stroke: 1px black;
-   color: white;
-   text-shadow:
-       3px 3px 0 #000,
-     -1px -1px 0 #000,  
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-       1px 1px 0 #000;
-}
+  .header-content p {
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin-top: 0;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 500;
+  }
 
-.header-content p {
-  font-size: 12px;
-  letter-spacing: 5px;
-  margin-top: 0;
-  margin-bottom: 30px;
-  text-transform: capitalize;
-  color: #fff;
-  font-weight: 500;
-  -webkit-text-stroke: 1px black;
-   color: white;
-   text-shadow:
-       3px 3px 0 #000,
-     -1px -1px 0 #000,  
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-       1px 1px 0 #000;
-}
+  .header-content .list-social li {
+    float: left;
+    margin-right: 20px;
+  }
 
-.header-content .list-social li {
-  float: left;
-}
+  .header-content .list-social li i {
+    color: #fff;
+    font-size: 12px;
+  }
 
+/*ABOUT*/
 
-.scrolldown a{
-  top: 95%;
-  left: 43%;
-  font-size: 16px;
- -webkit-text-stroke: 1px black;
- text-shadow:
-     1px 1px 0 #000,
-   -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
+  #about {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: black;
+  }
+
+  #about h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  #about h1 span {
+    border-bottom: 3px solid #228B22;
+    -webkit-text-stroke: 1px black;
+     color: white;
+     text-shadow:
+         3px 3px 0 #000000,
+       -1px -1px 0 #000000,  
+        1px -1px 0 #000000,
+        -1px 1px 0 #000000,
+         1px 1px 0 #000000;
+  }
+
+  .about-row {
+
+  }
+
+  .about-me {
+    margin: 5em 5em 5em auto;
+  }
+
+  .img-container img {
+    border-radius: 100%;
+    width: 100px;
+    margin-bottom: 2em;
+    margin-top: -5px;
+  }
+
+  #about .download {
+     width: 58.33333%;
+     padding-top: 6px;
+  }
+  #about .main-col { padding-right: 5%; }
+  #about .download .button {
+     margin-top: 6px;
+     background: #179400;
+  }
+  #about .download .button:hover {
+     background: #fff;
+     color: #179400;
+  }
+  #about .download .button i {
+     margin-right: 15px;
+     font-size: 20px;
+  }
+
+  .button {
+    padding: 12px 20px;
+    border-radius: 3px;
+  }
+
+  .about-descr {
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  .descr-container {
+    margin-top: 2em;
+  }
+
+/*FOOTER*/
+.scrollup a {
+   position: absolute;
+   float: right;
+   left: 50%;
+   display: block;
+   height: 42px;
+   width: 24px;
+   font-size: 24px;
+   line-height: 42px;
   }
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media only screen 
+  and (min-device-width: 641px) 
+  and (max-device-width: 999px)
+  and (-webkit-min-device-pixel-ratio: 2) { 
+/*HEADER*/
+/*HEADER*/
+
+  .header-content {
+    top: 60%;
+    left: 59%;
+  }
+
+  .header-content h1 {
+    font-size: 22px;
+  }
+
+  .header-content p {
+    font-size: 18px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+  }
+
+  .header-content .list-social li {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .header-content .list-social li i {
+    color: #fff;
+    font-size: 14px;
+  }
+
+/*ABOUT*/
+
+  #about h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .about-me {
+    margin: 5em 0 5em auto;
+  }
+
+  .img-container img {
+    border-radius: 100%;
+    margin-left: 20px;
+    width: 400px;
+  }
+
+  #about .download {
+     width: 100%;
+  }
+
+  #about .download .resume-button i {
+     margin-right: 15px;
+     font-size: 24px;
+  }
+
+  .resume-button {
+    font-size: 20px;
+    padding: 12px 20px;
+    border-radius: 3px;
+  }
+
+  .about-descr {
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  .descr-container {
+    margin-top: 2em;
+  }
+
+  /*SKILLS*/
+  .skills-bar {
+    margin: 10em 10em auto 0;
+  }
+
+  .bars {
+    width: 100%;
+  }
+
+  .quote2 blockquote p {
+    font-size: 24px;
+  }
+
+  /*FOOTER*/
+  .scrollup a {
+   left: 85%;
+   display: block;
+   height: 42px;
+   width: 42px;
+   font-size: 42px;
+   line-height: 42px;
+  }
+
+  .scrolldown a {
+   top: 91%;
+   left: 50%;
+   font-size: 36px;
+   line-height: 42px;
 
 }
 
+/*Medium devices*/
+@media only screen 
+  and (min-device-width: 1000px) 
+  and (max-device-width: 1199px)
+  and (-webkit-min-device-pixel-ratio: 2) { 
+/*HEADER*/
+/*HEADER*/
+
+  .header-content {
+    position: absolute;
+    top: 50%;
+    left: 59%;
+  }
+
+  .header-content h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: 100;
+    margin-bottom: 10px;
+  }
+
+  .header-content p {
+    font-size: 18px;
+    letter-spacing: 5px;
+    margin-top: 0;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .header-content .list-social li {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .header-content .list-social li i {
+    color: #fff;
+    font-size: 20px;
+  }
+
+/*ABOUT*/
+
+  #about h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .about-me {
+    margin: 5em 0 5em auto;
+  }
+
+  .img-container img {
+    border-radius: 100%;
+    margin-left: 20px;
+    width: 400px;
+  }
+
+  #about .download {
+     width: 100%;
+  }
+
+  #about .download .resume-button i {
+     margin-right: 15px;
+     font-size: 24px;
+  }
+
+  .resume-button {
+    font-size: 20px;
+    padding: 12px 20px;
+    border-radius: 3px;
+  }
+
+  .about-descr {
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  .descr-container {
+    margin-top: 2em;
+  }
+
+  /*SKILLS*/
+  .skills-bar {
+    margin: 10em 10em auto 0;
+  }
+
+  .bars {
+    width: 100%;
+  }
+
+  .quote2 blockquote p {
+    font-size: 24px;
+  }
+
+  /*FOOTER*/
+  .scrollup a {
+   left: 85%;
+   display: block;
+   height: 42px;
+   width: 42px;
+   font-size: 42px;
+   line-height: 42px;
+  }
+
+  .scrolldown a {
+   top: 91%;
+   left: 50%;
+   font-size: 36px;
+   line-height: 42px;
+
+}
+
+/*Laptop devices*/
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+   /*HEADER*/
+
+  .header-content {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+  }
+
+  .header-content h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 10px;
+  }
+
+  .header-content p {
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin-top: 0;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .header-content .list-social li {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .header-content .list-social li i {
+    color: #fff;
+    font-size: 30px;
+  }
+
+/*ABOUT*/
+
+  #about h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .about-me {
+    margin: 5em 2em 5em auto;
+  }
+
+  .img-container img {
+    border-radius: 100%;
+    margin-left: 20px;
+    width: 400px;
+  }
+
+  #about .download {
+     width: 100%;
+  }
+
+  #about .download .resume-button i {
+     margin-right: 15px;
+     font-size: 24px;
+  }
+
+  .resume-button {
+    font-size: 20px;
+    padding: 12px 20px;
+    border-radius: 3px;
+  }
+
+  .about-descr {
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+  }
+
+  .descr-container {
+    margin-top: 2em;
+  }
+
+  /*SKILLS*/
+  .skills-bar {
+    margin: 10em 10em auto 0;
+  }
+
+  .bars {
+    width: 100%;
+  }
+
+  /*FOOTER*/
+  .scrollup a {
+   left: 85%;
+   display: block;
+   height: 42px;
+   width: 42px;
+   font-size: 42px;
+   line-height: 42px;
+  }
+
+}
